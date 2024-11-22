@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 20%, rgb(226, 226, 226) 73%);
+    height: 100vh;
+}
+
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: rgb(235, 232, 232);
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.formulario h1 {
+    text-align: center;
+    padding: 0 0 20px;
+    border-bottom: 1px solid silver;
+}
+
+.formulario form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .username {
+    position: relative;
+    border-bottom: 2px solid #543;
+    margin: 30px 0;
+}
+
+.username input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.username label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: rgb(160, 161, 161);
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.bi {
+    color: gray; 
+    font-size: 1.5rem; 
+    cursor: pointer; 
+    position: absolute; 
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+.username input:valid ~ label {
+    top: -5px;
+    color: #000000;
+    transition: top 0.3s ease, color 0.3s ease;
+}
+
+.recordar {
+    margin: -5px 0 20px 5px;
+    color: rgb(3, 3, 3);
+    cursor: pointer;
+}
+
+.recordar:hover {
+    text-decoration: underline;
+}
+
+a[type="submit"] {
+    padding: 10px;
+    border: 2px solid black;
+    background: linear-gradient(90deg, rgb(226, 226, 226) 20%, rgb(0, 0, 0) 73%);
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    display: grid;
+    place-content: center;
+}
+
+a[type="submit"]:hover {
+    border: 2px solid black;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 20%, rgb(226, 226, 226) 73%);
+}
+
+.registrarse {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.registrarse a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: none;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);         
+}
+
+.registrarse a:hover {
+    text-decoration: underline;
+}
